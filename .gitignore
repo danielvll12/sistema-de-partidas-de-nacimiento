@@ -1,18 +1,32 @@
-# Carpetas a ignorar
+# Dependencias de node
 node_modules/
+
+# Archivos de build / producción
 build/
 dist/
-.cache/
 
-# Archivos sensibles o innecesarios
-.env
-.DS_Store
-*.log
+# Archivos de logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Archivos de editor
+# Configuraciones de editor y sistema operativo
 .vscode/
 .idea/
+.DS_Store
+
+# Variables de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache de bundlers / herramientas
+.cache/
+.next/
+out/
+
+# Archivos de sistema o temporales
 *.swp
+*.lock
